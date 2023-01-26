@@ -3,7 +3,7 @@ package com.linearsearch;
 import java.util.Arrays;
 import java.util.List;
 
-public class Seach2dArray {
+public class Search2DArray {
     public static void main(String[] args) {
         int[][] arr2d = {
                 {1,2,3},
