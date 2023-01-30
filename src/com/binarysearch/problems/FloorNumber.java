@@ -3,7 +3,7 @@ package com.binarysearch.problems;
 public class FloorNumber {
     public static void main(String[] args) {
         int[] arr = {2,3,5,9,14,16,18};
-        int target = 15;
+        int target = 25;
         System.out.println(floorNumber(arr, target));
     }
 
@@ -11,7 +11,11 @@ public class FloorNumber {
         try {
             int start = 0;
             int end = arr.length;
+
             while(start<end){
+                if(target > arr[end-1]){
+                    return -1;
+                }
                 int mid = start + (end-start)/2;
                 if(arr[mid] == target){
                     return arr[mid];
